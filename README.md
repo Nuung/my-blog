@@ -1,22 +1,22 @@
-# DDMap
-모든 화장실에 대한 모든 것, 대똥여지도 - DDMap
+# my-blog with private CMS system
+개인 블로그, 볼륨작고 가벼운 CMS 처럼 만들기.
+개인 이력 및 포트폴리오 소개와 저장.
 
 ## Infra
-AWS EC2 ubuntu 18.0.*
+GCP Computer Engine (구글 클라우드 호스팅) VM instance
 - free tier
 
-WebServer(EC2)
+WebServer
 - nginx
 	- test-frontend forwarding
-	- /home/ubuntu/projects/ableProject/test-frontend
+	- /home/qlgks1/projects/my-blog/my-blog-frontend
 	- reverse proxy server setting (not yet)
 
 - front-end
 	- HTML5, CSS3 with bootstarp
 	- vanilla javascript (at first)
-	- to react.js (to scale up)
 
-WebApplicationServer(EC2)
+WebApplicationServer
 - back-end
 	- Nodejs 
 		- express, resetAPI
@@ -29,9 +29,8 @@ IDE
 - Visual Studio Code
 	- sftp
 
-SSH
-- putty(just in window)
-	- private key: local download folder
+OS
+- macOS
 
 ETC
 - github
@@ -40,4 +39,4 @@ Open-source
 - Docker (not yet)
 - Elasticsearch (not yet)
 
-©copyright ALL Copyrights reserved by Hyeonwoo, Jeong
+©copyright ALL Copyrights only reserved by Hyeonwoo, Jeong
