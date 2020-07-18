@@ -1,34 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <!-- Get head tags as components -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154978198-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-154978198-1');
-  </script>
+<html>
+<head id="importHead">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="코디네이터와 시각장애인이 함께하는 오프라인 쇼핑, ab:le(every)">
-  <meta name="author" content="ab:le(every)">
-
-  <!-- meta tag for face book link share -->
-  <meta property="og:title" content="ab:le(every)">
-  <meta property="og:description" content="코디네이터와 시각장애인이 함께하는 오프라인 쇼핑, ab:le(every)">
-  <meta property="og:image" content="./public/images/landingpage-01.jpg">
-  <meta property="og:image:type" content="image/jpg">
-
-  <!-- Google / Search Engine Tags / 구글 검색 엔진 -->
-  <meta itemprop="name" content="ab:le(에브리)">
-  <meta itemprop="description" content="코디네이터와 시각장애인이 함께하는 오프라인 쇼핑, ab:le(every)">
-  <meta itemprop="image" content="./public/images/landingpage-01.jpg">
-
-  <title>ablevery</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>TITLE</title>
   <!-- Favicon setting -->
   <link rel="shortcut icon" href="./public/images/cl_ico.ico">
   <link rel="icon" href="./public/images/cl_ico.ico">
@@ -37,190 +14,78 @@
   <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-
-  <!-- Custom styles for this template -->
-  <link href="./public/css/scrolling-nav.css" rel="stylesheet">
-  <link href="./public/css/mainStyle.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel='stylesheet' href='public/stylesheets/style.css' />
+  
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>  
 </head>
 
-<body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container" id="navContainer">
-      <a class="navbar-brand js-scroll-trigger" id="logImg" href="#page-top">
-        ab:)e[every]
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto" id="navbarMenuItems">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#review">REVIEW</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#use">USE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#modalLoginForm">LOGIN</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar"></nav>
 
-  <img src="./public/images/landingpage-01.jpg" alt="welcome to able(every)" width="100%"/>
-  <section id="about">
-    <div class="counter_wrapper">
-      <div class="counter col_fourth">
-        <img class="counter_img" src="./public/images/ICON-01.png" alt="기대 서비스 수혜자 수 260명" width="30%" />
-        <h2 class="count-title counter-value" data-count="260">0</h2>
-          <p class="count-text">기대 서비스 수혜자 수</p>
-      </div>
-  
-      <div class="counter col_fourth">
-        <img class="counter_img" src="./public/images/ICON-02.png" alt="코디 봉사 신청자 수 104명" width="30%" />
-        <h2 class="count-title counter-value" data-count="104">0</h2>
-        <p class="count-text">코디 봉사 신청자 수</p>
-      </div>
-  
-      <div class="counter col_fourth">
-        <img class="counter_img" src="./public/images/ICON-03.png" alt="활동 코디 수 13명" width="30%" />
-        <h2 class="count-title counter-value" data-count="13">0</h2>
-        <p class="count-text">활동 코디 수</p>
-      </div>
-  
-      <div class="counter col_fourth end">
-        <img class="counter_img" src="./public/images/ICON-04.png" alt="서비스 완료 리뷰 수 24개" width="30%" />
-        <h2 class="count-title counter-value" data-count="30">0</h2>
-        <p class="count-text">서비스 완료 리뷰 수</p>
-      </div>
-    </div><!-- counter_wrapper -->
-    <img src="./public/images/landingpage-02.jpg" alt="시각장애인과 함께하는 오프라인 쇼핑, 모든 시각장애인이 원하는 옷을 직접 구입할 수 있는 에브리 36.5" width="100%"/>
-  </section>
-  <section id="review">
-    <img src="./public/images/landingpage-03.jpg" alt="사용자 리뷰" width="100%"/>
-  </section>
-  <section id="instagram">
-  </section>
-  <section id="use">
-    <img src="./public/images/landingpage-04.jpg" alt="서비스 진행방식, 이용문의, 정보수집 및 전달, 코디매칭, 서비스 이용" width="100%"/>
-  </section>
-  <section id="contact">
-    <img src="./public/images/landingpage-05.jpg" alt="연락은 able_every@daum.net 으로 주세요" width="100%"/>
-    <!-- <a href="tel:01053285816" id="applyCall" class="btn btn-dark btn-lg">전화하기</a> -->
-    <a href="mailto:able_every@daum.net" id="applyMail" class="btn btn-dark btn-lg">메일보내기</a>
-    <!-- <a href="https://forms.gle/nF73CYdrEM4WFLPA8" id="applyMail" class="btn btn-dark btn-lg">설문조사 참여하기</a> -->
-    <a href="https://forms.gle/LxkxTSsV6RPY9nnr6" id="applyCodi" class="btn btn-dark btn-lg" target= "_blank">코디신청하기</a>
-    <img src="./public/images/landingpage-06.jpg" alt="연락은 able_every@daum.net 으로 주세요" width="100%"/>
-    <!-- <a href="tel:01053285816" id="applyCall" class="btn btn-purple btn-lg">전화하기</a> -->
-    <!-- <a href="https://forms.gle/LxkxTSsV6RPY9nnr6" id="applyCodi" class="btn btn-purple btn-lg">코디신청하기</a> -->
-  </section>
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
 
-  <!-- Modal HTML -->
-  <div id="modalLoginForm" class="modal fade">
-    <div class="modal-dialog modal-login modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="./public/images/CI-fontLogo.jpg" class="modal-title"/>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">Page</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Page</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-body">
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" name="username" placeholder="Username" required="required">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="text" class="form-control" name="password" placeholder="Password" required="required">
-              </div>
-            </div>
-            <div class="form-group" style="text-align: center;">
-              <button type="submit" class="btn btn-primary btn-block btn-lg">LOG IN</button>
-            </div>
-            <p class="hint-text"><a href="#">Forgot Password?</a></p>
-          </form>
-        </div> <!-- modal-body -->
-        <div class="modal-footer">Don't have an account? <a href="#">Create one</a></div>
-      </div> <!-- modal-content -->
+      </nav>
+
+      <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="line"></div>
+
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="line"></div>
+
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="line"></div>
+
+      <h3>Lorem Ipsum Dolor</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
+  <footer id="importFooter">
+    <!-- HERE IS FOOTER -->
+  </footer>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    // import Components (this line is related with Ajax - jquery)
+    $("#sidebar").load("./components/navbar.html");   
+    $("#importFooter").load("./components/footer.html");
 
-  <div id="importFooter"></div>
-  <script>
-    $("#importFooter").load("components/footer.html");   
-  </script>
-  <!-- Bootstrap core JavaScript -->
-  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="./lib/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="./public/js/scrolling-nav.js"></script>
-</body>
-<script>
-  let actionCheck = 0;
-  $(window).scroll(function() {
-    var oTop = $('.counter_wrapper').offset().top - window.innerHeight;
-    if (actionCheck == 0 && $(window).scrollTop() > oTop) {
-      $('.counter-value').each(function() {
-        var $this = $(this),
-          countTo = $this.attr('data-count');
-        $({
-          countNum: $this.text()
-        }).animate({
-            countNum: countTo
-          },
-          {
-            duration: 2000,
-            easing: 'swing',
-            step: function() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-              $this.text(this.countNum);
-              //alert('finished');
-            }
-          });
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
       });
-      actionCheck = 1;
-    }
-  });
-  
-  // Instagram 게시글 불러오기 
-  const wrapper = document.getElementById("instagram");
-  fetch("https://www.instagram.com/able__every/")
-  .then(a => {
-      return a.text();
-  }).then(a => {
-      const media = JSON.parse(a.slice(a.indexOf("edge_owner_to_timeline_media") + 30, a.indexOf("edge_saved_media") - 2));
-      media.edges.forEach(m => {
-          const node = m.node,
-              div = document.createElement("div"),
-              a = document.createElement("a"),
-              img = document.createElement("img");
-
-          div.className = "instaBox",
-          img.className = "instaImg",
-          a.target="_blank",
-          a.href = `https://www.instagram.com/p/${node.shortcode}/`,
-          img.src = node.display_url,
-          a.append(img),
-          div.append(a),
-          wrapper.append(div)
-      })
-  });
-  
-</script>
+    });
+  </script>
+</body>
 </html>
