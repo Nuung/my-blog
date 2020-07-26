@@ -55,9 +55,9 @@ server {
 		try_files $uri $uri/ =404;
 	}
 
-	location /codi {
-	        alias /home/ubuntu/projects/ableProject/test-frontend;
-		index codi.html;
+	location /portfolio {
+	    alias /home/qlgks1/projects/my-blog/my-blog-frontend;
+		index portfolio.html;
 		try_files $uri.html $uri $uri/ =404;
 	}
 
